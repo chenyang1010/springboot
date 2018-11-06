@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zte.myproject1.mapper.AccountMapper">
+
+    <resultMap id="gainAccount" type="com.zte.myproject1.entity.Account">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR" />
+        <result property="money" column="money" jdbcType="DOUBLE" />
+    </resultMap>
+
+    <select id="getAccount" parameterType="Integer" resultType="com.zte.myproject1.entity.Account">
+        select * from account
+        where
+        <if test="id != null">
+            id = #{id}
+        </if>
+    </select>
+
+    <insert id="addAccount" parameterType="com.zte.myproject1.entity.Account">
+        INSERT INTO
+        ACCOUNT (id,name,money)
+        VALUES
+        (#{id},#{name, jdbcType=VARCHAR},#{password,jdbcType=DOUBLE})
+    </insert>
+
+    <delete id="delAccount" parameterType="Integer">
+        delete from account
+        where id = #{id}
+    </delete>
+    
+    <update id="updateAccount" parameterType="com.zte.myproject1.entity.Account">
+        update account
+        set name = #{name},money=#{money}
+        where id = #{id}
+    </update>
+
+</mapper>
