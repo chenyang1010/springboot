@@ -24,7 +24,7 @@ public class AccountService {
         accountMapper.delAccount(id);
     }
 
-    @Transactional(isolation = Isolation.DEFAULT, propagation = Propagation.MANDATORY, readOnly = true)
+    //@Transactional(isolation = Isolation.DEFAULT, propagation = Propagation.MANDATORY)
     public void addAccount(Account account) {
         accountMapper.addAccount(account);
     }

@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Param;
 @Mapper
 public interface AccountMapper {
     Account getAccount(@Param("id") int id);
-    void delAccount(int id);
+    void delAccount(@Param("id") int id);
     void addAccount(Account account);
     void updateAccount(Account user);
 }

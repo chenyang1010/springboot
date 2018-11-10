@@ -21,7 +21,7 @@
         INSERT INTO
         ACCOUNT (id,name,money)
         VALUES
-        (#{id},#{name, jdbcType=VARCHAR},#{password,jdbcType=DOUBLE})
+        (#{id},#{name, jdbcType=VARCHAR},#{money})
     </insert>
 
     <delete id="delAccount" parameterType="Integer">

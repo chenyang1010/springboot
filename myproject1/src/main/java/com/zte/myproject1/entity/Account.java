@@ -5,6 +5,10 @@ public class Account {
     String name;
     double money;
 
+    public Account() {
+
+    }
+
     public Account(int id, String name, double money) {
         this.id = id;
         this.name = name;
