@@ -2,4 +2,4 @@
 ## myproject1--------------- 配置文件的方式使用Mybatis
 ## myproject2--------------- 注解的方式使用Mybatis
 ## myproject3--------------- mybatis使用多数据源
-## myproject3--------------- sharding-jdbc数据分库分表存储
+## myproject4--------------- sharding-jdbc数据分库分表存储
