@@ -6,3 +6,4 @@
 ## myproject5--------------- mybatis逆向工程
 ## myproject6--------------- 单机redis
 ## myproject7--------------- jedis+单机redis
+## myproject8--------------- 打war包
